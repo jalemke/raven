@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+    <title>Raven</title>
+    <link rel="shortcut icon" href="/img/raven.png">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="bower_components/flatiron-director/flatiron-director.html">
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/font-roboto/roboto.html">
+    <link rel="import" href="elements/raven-elements.html">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'RobotoDraft', sans-serif;
+        }
+        
+        #navheader {
+            background-color: #56BA89;
+        }
+
+        .content {
+            padding: 3px;
+            //height: 2000px;
+        }
+
+    </style>
+</head>
+
+<body unresolved touch-action="auto">
+    <template is="auto-binding">
+      <flatiron-director route="{{route}}" autoHash></flatiron-director>
+    <!--<antha-experiments></antha-experiments>-->
+    <!--<antha-profile></antha-profile>-->
+    <antha-app route="{{route}}"></antha-app>
+    <!--<antha-experiment_detail fit></antha-experiment_detail>-->
+      <script>
+        document.querySelector('antha-app').items = [
+                    {
+                    route: 'Element',
+                    album: 'thing1',
+                    image_01: '../img/element_01.jpg',
+                    image_08: '../img/element_08.jpg',
+                    links: [
+                                {
+                                page_name: "Start",
+                                page_id: 0,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Build",
+                                page_id: 6,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Test",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Library",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Download",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Browse",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Search",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                }
+                            ]
+                    },
+                    {
+                    route: 'Workflow',
+                    album: 'thing2',
+                    image_01: '../img/workflow_01.jpg',
+                    image_08: '../img/workflow_08.jpg',
+                    links: [
+                                {
+                                page_name: "Start",
+                                page_id: 1,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Inventory",
+                                page_id: 4,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Element Library",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Equipment",
+                                page_id: 4,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Favorites",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Preview",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Search",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                }
+                            ]
+                    },
+                    {
+                    route: 'Experiment',
+                    album: 'thing3',
+                    image_01: '../img/experiment_01.jpg',
+                    image_08: '../img/experiment_08.jpg',
+                    links: [
+                                {
+                                page_name: "Start",
+                                page_id: 0,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Analyze Results",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Test",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Library",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Download",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Browse",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "Search",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                },
+                                {
+                                page_name: "",
+                                page_id: 5,
+                                page_image: "thing.jpg"
+                                }
+                            ]
+                    }
+        ];
+    </script>
+
+    </template>
+</body>
+</html>
